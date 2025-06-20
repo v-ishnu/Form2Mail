@@ -1,8 +1,8 @@
 ; import jwt from "jsonwebtoken"
-  ; import smtpConfig from "../config/smpt.config.js"
-  ; import transporter from "../config/transporter.js"
+; import smtpConfig from "../config/smpt.config.js"
+; import transporter from "../config/transporter.js"
 
-  ; const CREATE_ACCONT = async (email) => {
+; const CREATE_ACCONT = async (email) => {
     try {
 
       const token = jwt.sign(

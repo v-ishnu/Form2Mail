@@ -1,5 +1,7 @@
 import Client from "../models/client.js";
-import CREATE_ACCOUNT from "../utils/sendMails.js";
+import PendingSubmission from "../models/pendingSubmission.js";
+import CREATE_ACCOUNT from "../utils/createAccountMail.js";
+import SEND_DATA_TO_EMAIL from "../utils/sendFormDataMail.js";
 
 const formSubmission = async (req, res) => {
     try {
@@ -15,6 +17,13 @@ const formSubmission = async (req, res) => {
         if (!client) {
             console.log("Client not found, sending account creation email...");
 
+            // Store form temporarily
+            await PendingSubmission.findOneAndUpdate(
+                { email: emailAddress },
+                { formData },
+                { upsert: true }
+            );
+
             const mailResponse = await CREATE_ACCOUNT(emailAddress);
 
             if (!mailResponse.success) {
@@ -25,17 +34,22 @@ const formSubmission = async (req, res) => {
                 });
             }
 
-            return res.status(200).json({
-                success: true,
-                message: "Account creation email sent",
-                email: emailAddress
-            });
+            return res
+                .render("account-creation", { email: emailAddress })
+                // .status(200).json({
+                //     success: true,
+                //     message: "Account creation email sent",
+                //     email: emailAddress
+                // });
         }
+
+        // Client exists → directly send form data
+        await SEND_DATA_TO_EMAIL(emailAddress, formData);
 
         res.status(200).json({
             success: true,
-            email: emailAddress,
-            client: client // Optional: send client data if found
+            message: "Form data sent",
+            email: emailAddress
         });
     } catch (error) {
         console.error("Error:", error);
@@ -45,5 +59,6 @@ const formSubmission = async (req, res) => {
         });
     }
 };
+
 
 export default formSubmission;

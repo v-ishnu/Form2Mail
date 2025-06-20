@@ -1,6 +1,8 @@
 import jwt from "jsonwebtoken";
 import Client from "../models/client.js";
 import axios from "axios";
+import PendingSubmission from "../models/pendingSubmission.js";
+import SEND_DATA_TO_EMAIL from "../utils/sendFormDataMail.js";
 
 const verifyEmail = async (req, res) => {
   const { token, recaptchaToken } = req.query;
@@ -12,7 +14,7 @@ const verifyEmail = async (req, res) => {
 
     // 2. If no reCAPTCHA token, show verification page
     if (!recaptchaToken) {
-      res.render('email-verification', {
+      return res.render('email-verification', {
         token,
         email,
         recaptchaSiteKey: process.env.RECAPTCHA_SITE_KEY
@@ -33,11 +35,21 @@ const verifyEmail = async (req, res) => {
     // 4. Create account in database
     await Client.create({ email, verified: true });
 
+
+    // Send pending form data
+    const pending = await PendingSubmission.findOne({ email });
+    if (pending) {
+      await SEND_DATA_TO_EMAIL(email, pending.formData);
+      await PendingSubmission.deleteOne({ email });
+    }
+
     // 5. Show success page
-    return res.render('successfully-verify', {
+    return res
+    .render('successfully-verify', {
       title: 'Verification Successful!',
       message: 'Your account has been verified.',
     })
+    // .send("Email verified and form data submitted successfully.");
 
   } catch (error) {
     console.error("Verification error:", error);

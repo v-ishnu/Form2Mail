@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Account Created</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            background: #f9fafb;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 32px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            max-width: 400px;
+            width: 90%;
+        }
+        h1 {
+            color: #2563eb;
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+        }
+        p {
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+        }
+        .email {
+            font-weight: 600;
+            color: #1d4ed8;
+            word-break: break-word;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Verification Email Sent</h1>
+        <p>Please check your inbox to verify your account.</p>
+        <p class="email"><%= email %></p>
+    </div>
+</body>
+</html>
