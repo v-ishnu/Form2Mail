@@ -1,0 +1,32 @@
+{
+  "name": "form2email",
+  "version": "0.0.1",
+  "description": "Tired of complex form handlers? FormSubmit Pro is the simplest way to collect form submissions and deliver them straight to your inbox—no backend code, no plugins, just a clean email with all the details.",
+  "keywords": [
+    "Form to email",
+    "HTML form to emai",
+    "Free form handler"
+  ],
+  "license": "ISC",
+  "author": "Vishnu Prakash",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "axios": "^1.10.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.0",
+    "express-validator": "^7.2.1",
+    "helmet": "^8.1.0",
+    "honeypot": "^0.0.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.16.0",
+    "nodemailer": "^7.0.3",
+    "nodemon": "^3.1.10"
+  }
+}

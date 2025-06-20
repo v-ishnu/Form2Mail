@@ -1,0 +1,12 @@
+# Node.js
+node_modules/
+npm-debug.log
+.env
+
+# Build artifacts
+build/
+dist/
+out/
+
+# Logs
+logs/
