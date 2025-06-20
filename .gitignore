@@ -8,5 +8,10 @@ build/
 dist/
 out/
 
+
+#security
+service-account.json
+
+
 # Logs
 logs/
