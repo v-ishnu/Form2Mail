@@ -3,9 +3,8 @@ import CREATE_ACCOUNT from "../utils/sendMails.js";
 
 const formSubmission = async (req, res) => {
     try {
-        // Access the correct parameter name based on your route
         const emailAddress = req.params.email || req.params.emailAddress;
-        console.log("Received email:", emailAddress);
+        const formData = req.body;
 
         if (!emailAddress) {
             return res.status(400).json({ error: "Email is required" });

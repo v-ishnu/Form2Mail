@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Verification Error</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #fef2f2;
+            font-family: system-ui, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #991b1b;
+        }
+
+        .container {
+            background: #fff;
+            border: 1px solid #fca5a5;
+            border-radius: 8px;
+            padding: 24px;
+            max-width: 400px;
+            width: 90%;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+            color: #b91c1c;
+        }
+
+        p {
+            font-size: 0.95rem;
+            margin: 6px 0;
+        }
+
+        .retry-btn {
+            margin-top: 16px;
+            display: inline-block;
+            padding: 10px 20px;
+            background: #dc2626;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: background 0.3s ease;
+        }
+
+        .retry-btn:hover {
+            background: #b91c1c;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Verification Error</h1>
+        <p>
+            <% if (error.message.includes("expired")) { %>
+                The verification link has expired.
+                <% } else { %>
+                    Invalid verification token.
+                    <% } %>
+        </p>
+    </div>
+</body>
+
+</html>

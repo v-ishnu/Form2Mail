@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Email Verification</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <style>
+        :root {
+            --primary: #4361ee;
+            --primary-dark: #3a56d4;
+            --success: #4cc9f0;
+            --text: #2b2d42;
+            --light: #f8f9fa;
+            --white: #ffffff;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --border-radius: 12px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: var(--text);
+        }
+
+        .verification-container {
+            background: var(--white);
+            padding: 40px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            width: 100%;
+            max-width: 480px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        h1 {
+            color: var(--primary);
+            margin-bottom: 24px;
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        p {
+            margin-bottom: 24px;
+            line-height: 1.6;
+            color: #4a5568;
+        }
+
+        .message {
+            font-size: 14px;
+            color: #718096;
+            margin-top: 20px;
+            font-style: italic;
+        }
+
+        .g-recaptcha {
+            display: flex;
+            justify-content: center;
+            margin: 24px 0;
+        }
+
+        button {
+            background-color: var(--primary);
+            color: var(--white);
+            border: none;
+            padding: 14px 28px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            width: 100%;
+            max-width: 240px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        button:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(67, 97, 238, 0.2);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        @media (max-width: 480px) {
+            .verification-container {
+                padding: 24px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+    <script>
+        function handleSubmit(e) {
+            e.preventDefault();
+            const recaptchaResponse = grecaptcha.getResponse();
+            if (!recaptchaResponse) {
+                alert('Please complete the reCAPTCHA');
+                return;
+            }
+            window.location.href = '/api/v.01/verify?token=<%= encodeURIComponent(token) %>&recaptchaToken=' + encodeURIComponent(recaptchaResponse);
+        }
+    </script>
+</head>
+<body>
+    <div class="verification-container">
+        <h1>Verify Your Email</h1>
+        <p>Please complete the reCAPTCHA to verify your email address.</p>
+
+        <form onsubmit="handleSubmit(event)">
+            <div class="g-recaptcha" data-sitekey="<%= recaptchaSiteKey %>"></div>
+            <button type="submit">Verify Email</button>
+        </form>
+
+        <p class="message">Verifying email: <%= email %></p>
+    </div>
+</body>
+</html>
