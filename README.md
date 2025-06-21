@@ -85,15 +85,8 @@ Add the `sheet` query parameter to the action URL with your Sheet ID.
 4. **Find Your Sheet ID:**
 The Sheet ID is the long string of characters in the URL of your Google Sheet.
     `https://docs.google.com/spreadsheets/d/`**`1BiF_PwhXHuNgWENADfQQHTFfDpjGb-zri8MdXv3onnQ`**`/edit`
-Where to find Your_Google_Sheet_Id:
 
-Look at your sheet's URL:
-
-`Example`
-```
-https://docs.google.com/spreadsheets/d/1BiF_PwhXHuNgWENADfQQHTFfDpjGb-zri8MdXv3onnQ/edit
-```
-**Your_Google_Sheet_Id** `1BiF_PwhXHuNgWENADfQQHTFfDpjGb-zri8MdXv3onnQ`
+   *Your_Google_Sheet_Id:* `1BiF_PwhXHuNgWENADfQQHTFfDpjGb-zri8MdXv3onnQ`
 
 ---
 
@@ -131,6 +124,8 @@ We welcome community input! Here's how to contribute:
 ---
 
 ## 🚨 Troubleshooting Guide (for Users)
+
+If you encounter issues, please check the following:
 
 ### 📧 Not Receiving Emails?
 
@@ -171,18 +166,16 @@ If the form is not submitting properly or shows an error:
 
 ## 🤝 Contributing
 
-We welcome contributions! Please read our [Contribution Guidelines](CONTRIBUTING.md) before getting started.
+Contributions are welcome! If you have ideas for improvements or want to fix a bug, please read our [**Contribution Guidelines**](CONTRIBUTING.md) to get started.
 
 
 ## 📜 License
 
-Distributed under the MIT License.
-See [`LICENSE`](LICENSE) for more information.
+This project is distributed under the GNU General Public License v3.0. See [`LICENSE`](LICENSE) for more information.
 
 ---
 
 ## 📬 Contact
 
- **Project Maintainer** – [@v-ishnu](https://github.com/v-ishnu)<br>
- **Email** – [Vishnu Prakash](mailto:vishnuprakash572@gmail.com)<br>
+ **Project Maintainer** – [@v-ishnu](https://github.com/v-ishnu)[Email](mailto:vishnuprakash572@gmail.com)<br>
  **Project Link** – [https://github.com/v-ishnu/Form2Mail](Form2Mail)<br>
