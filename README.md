@@ -31,18 +31,18 @@ Get form submissions straight to your inbox in 2 minutes!
 
 1. Copy this ready-to-use form code:
    ```html
-   <form action="https://www.form2mail.dinestx.com/api/v.01/your@email.com" method="POST" style="max-width:500px;margin:0 auto;">
+   <form action="https://www.form2mail.dinestx.com/api/v.01/your@email.com" method="POST">
 
       <label>Your Name*</label>
-      <input type="text" name="name" placeholder="John Smith" required style="width:100%;padding:8px;margin-bottom:15px;">
+      <input type="text" name="name" placeholder="John Smith" required>
 
       <label>Email Address*</label>
-      <input type="email" name="email" placeholder="you@example.com" required style="width:100%;padding:8px;margin-bottom:15px;">
+      <input type="email" name="email" placeholder="you@example.com" required>
 
       <label>Your Message</label>
-      <textarea name="message" placeholder="How can we help?" style="width:100%;padding:8px;height:120px;margin-bottom:15px;"></textarea>
+      <textarea name="message" placeholder="How can we help?"></textarea>
 
-      <button type="submit" style="background:#0066ff;color:white;padding:10px 20px;border:none;cursor:pointer;">
+      <button type="submit">
          Send Message
       </button>
    </form>
@@ -106,7 +106,7 @@ We welcome community input! Here's how to contribute:
 
 | Feature Request         | 👍 Votes | Status       | Discussion |
 | ----------------------- | -------- | ----------- | ---------- |
-| File attachments        | 42       | Planned     | [#4](https://github.com/v-ishnu/Form2Mail/discussions/4)    |
+| File attachments        | 01       | Planned     | [#4](https://github.com/v-ishnu/Form2Mail/discussions/4)    |
 
 
 
@@ -115,8 +115,8 @@ We welcome community input! Here's how to contribute:
 ### How to Participate
 
 1. **Vote** on existing requests by adding a 👍 reaction
-2. **Suggest** new features by [opening an issue](https://github.com/YourUsername/Form2Mail/issues/new)
-3. **Discuss** ideas in our [Discussions](https://github.com/YourUsername/Form2Mail/discussions) tab
+2. **Suggest** new features by [opening an issue](https://github.com/v-ishnu/Form2Mail/issues/new)
+3. **Discuss** ideas in our [Discussions](https://github.com/v-ishnu/Form2Mail/discussions) tab
 
 ---
 
