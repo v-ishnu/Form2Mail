@@ -126,10 +126,10 @@ We welcome community input! Here's how to contribute:
 
 If you're not receiving form submission emails:
 
-- ✅ Make sure you entered a **valid email address**
-- ✅ Check your **Spam** or **Junk folder**
-- ✅ Try using a different email provider (Currently, We only support Gmail)
-- ✅ If you're using a custom domain (e.g. `you@yourdomain.com`), ensure your domain is able to receive external emails
+- Make sure you entered a **valid email address**
+- Check your **Spam** or **Junk folder**
+- Try using a different email provider (Currently, We only support Gmail)
+- If you're using a custom domain (e.g. `you@yourdomain.com`), ensure your domain is able to receive external emails
 
 ---
 
