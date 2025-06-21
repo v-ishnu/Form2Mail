@@ -139,13 +139,13 @@ If you're not receiving form submission emails:
 
 If the form is not submitting properly or shows an error:
 
-- ✅ Ensure your internet connection is working
-- ✅ Refresh the page and try again
-- ✅ Complete the **reCAPTCHA** challenge (the “I’m not a robot” box)
-- ✅ If a link was emailed to you for verification:
+- Ensure your internet connection is working
+- Refresh the page and try again
+- Complete the **reCAPTCHA** challenge (the “I’m not a robot” box)
+- If a link was emailed to you for verification:
   - Make sure you click the link within **15 minutes**
   - Check that the link is not broken or expired
-- ✅ Make sure JavaScript is **enabled** in your browser
+- Make sure JavaScript is **enabled** in your browser
 
 ---
 
