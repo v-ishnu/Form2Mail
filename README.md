@@ -106,9 +106,9 @@ We welcome community input! Here's how to contribute:
 
 | Feature Request         | 👍 Votes | Status       | Discussion |
 | ----------------------- | -------- | ----------- | ---------- |
-| File attachments        | 42       | Planned     | [#4](#)    |
-| Slack/Teams integration | 28       | In Progress | [#18](#)   |
-| Multi-language support  | 15       | Considering | [#23](#)   |
+| File attachments        | 42       | Planned     | [#4](https://github.com/v-ishnu/Form2Mail/discussions/4)    |
+
+
 
 > ℹ️ *Click the issue numbers above to view or join the discussion.*
 
