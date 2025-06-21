@@ -84,7 +84,7 @@ Add the `sheet` query parameter to the action URL with your Sheet ID.
 
 4. **Find Your Sheet ID:**
 The Sheet ID is the long string of characters in the URL of your Google Sheet.
-    `https://docs.google.com/spreadsheets/d/`**`1BiF_PwhXHuNgWENADfQQHTFfDpjGb-zri8MdXv3onnQ`**`/edit`
+    https://docs.google.com/spreadsheets/d/`1BiF_PwhXHuNgWENADfQQHTFfDpjGb-zri8MdXv3onnQ`/edit
 
    *Your_Google_Sheet_Id:* `1BiF_PwhXHuNgWENADfQQHTFfDpjGb-zri8MdXv3onnQ`
 
