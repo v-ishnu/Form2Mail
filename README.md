@@ -1,51 +1,83 @@
 # 📧 Form2Mail
 
-**A lightweight form-to-email solution for static websites**
+**Seamlessly receive form submissions via email AND store them in Google Sheets**
+A complete solution for capturing, notifying, and organizing form data without backend code.
 
-Send form submissions directly to your inbox without server-side complexity. Perfect for GitHub Pages, JAMstack sites, and simple HTML projects.
+Effortlessly capture form submissions with instant email delivery and automated Google Sheets logging - no backend code required. The perfect solution for static sites, GitHub Pages, and JAMstack projects.
 
 ![Form2Mail Demo]() <!-- Replace with actual screenshot -->
 
 ---
 
-## ✨ Features
+## ✨ Key Features
 
-- 🚀 **Zero-database architecture** – Pure nodejs mailer
+- 🚀 **Zero backend setup** - works with static sites
 - 🛡️ **Spam protection** – reCAPTCHA
-- 📝 **Customizable templates** – HTML or plain text emails
+- ✉️ **Instant email notifications** on form submission
+- 📊 **Auto-save to Google Sheets** in real-time
+- 🔒 **Secure processing** via Google Service Account
 - 🔔 **Success/error notifications** – User feedback after submission
 - 💬 **Community-driven** – Feature voting and discussion
 
 ---
 
-## 🛠️ Installation
+## Basic Setup
 
-### Basic Setup
+### Email-Only Setup (Simple Version)
 
-1. Use the hosted **Form2Mail** endpoint directly.
-Just replace `your@email.com` with your actual email address in the form `action`.
-2. Configure your email settings in `form2mail.php`:
+**Perfect when you just need form submissions sent to your inbox**
+Get form submissions straight to your inbox in 2 minutes!
 
-   ```php
-   // In form2mail.php
-   $recipient = "your@email.com";       // Change this
-   $subject = "New Form Submission";    // Customize if needed
+
+1. Copy this ready-to-use form code:
+   ```html
+   <form action="https://www.form2email.dinestx.com/api/v.01/your@email.com" method="POST" style="max-width:500px;margin:0 auto;">
+
+      <label>Your Name*</label>
+      <input type="text" name="name" placeholder="John Smith" required style="width:100%;padding:8px;margin-bottom:15px;">
+
+      <label>Email Address*</label>
+      <input type="email" name="email" placeholder="you@example.com" required style="width:100%;padding:8px;margin-bottom:15px;">
+
+      <label>Your Message</label>
+      <textarea name="message" placeholder="How can we help?" style="width:100%;padding:8px;height:120px;margin-bottom:15px;"></textarea>
+
+      <button type="submit" style="background:#0066ff;color:white;padding:10px 20px;border:none;cursor:pointer;">
+         Send Message
+      </button>
+   </form>
    ```
 
-3. Add to your HTML form:
+2. Just change one thing:
 
-   ```html
-   <form action="https://www.form2email.dinestx.com/api/v.01/your@email.com" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" required></textarea>
+   Replace your@email.com with your actual email address
 
-       <!-- Honeypot spam protection -->
-      <input type="text" name="honeypot" style="display:none">
+   ```js
+      https://www.form2email.dinestx.com/api/v.01/your@email.com
+   ```
+3. **That's it!** Form submissions will now come directly to your inbox.
 
-      <button type="submit">Send Message</button>
+
+### Form2Mail with Google Sheets Integration
+
+#### Prepare Your Google Sheet
+1. Create a new Google Sheet ([template](https://sheets.new))
+2. Share with our service account:
+   - Click **Share** → Enter:
+     `form2mail@dinestx.iam.gserviceaccount.com`
+   - Set permission: **Editor**
+
+3. Add This Form to Your Website
+Where to find YOUR_SHEET_ID:
+Look at your sheet's URL:
+https://docs.google.com/spreadsheets/d/THIS_IS_YOUR_SHEET_ID/edit
+
+```html
+   <form action="https://www.form2email.dinestx.com/api/v.01/your@email.com?submit=Your_Google_Sheet_Id" method="POST">
+      // Your Form Code
     </form>
    ```
+
 
 ---
 
