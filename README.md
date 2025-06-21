@@ -69,7 +69,14 @@ Get form submissions straight to your inbox in 2 minutes!
    - Set permission: **Editor**
 
 3. Add This Form to Your Website
-Where to find YOUR_SHEET_ID:
+
+```html
+   <form action="https://www.form2mail.dinestx.com/api/v.01/your@email.com?submit=Your_Google_Sheet_Id" method="POST">
+      // Your Form Code
+    </form>
+```
+Where to find Your_Google_Sheet_Id:
+
 Look at your sheet's URL:
 
 `Example`
@@ -77,14 +84,6 @@ Look at your sheet's URL:
 https://docs.google.com/spreadsheets/d/1BiF_PwhXHuNgWENADfQQHTFfDpjGb-zri8MdXv3onnQ/edit
 ```
 **YOUR_SHEET_ID:** `1BiF_PwhXHuNgWENADfQQHTFfDpjGb-zri8MdXv3onnQ`
-
-
-```html
-   <form action="https://www.form2mail.dinestx.com/api/v.01/your@email.com?submit=Your_Google_Sheet_Id" method="POST">
-      // Your Form Code
-    </form>
-   ```
-
 
 ---
 
