@@ -88,7 +88,6 @@ The Sheet ID is the long string of characters in the URL of your Google Sheet.
 
    *Your_Google_Sheet_Id:* `1BiF_PwhXHuNgWENADfQQHTFfDpjGb-zri8MdXv3onnQ`
 
----
 
 ## ⚙️ Form Configuration Options
 
@@ -99,7 +98,7 @@ The Sheet ID is the long string of characters in the URL of your Google Sheet.
 | `name= "Email"`    | Capital `Name` can be Shown in Your email Table    | `name="email"`  |
 | `name= "Mobile"`   | Capital `Name` can be Shown in Your email Table    | `name="mobile"` |
 
----
+
 
 ## 💬 Feature Discussions
 
@@ -121,7 +120,6 @@ We welcome community input! Here's how to contribute:
 2. **Suggest** new features by [opening an issue](https://github.com/v-ishnu/Form2Mail/issues/new)
 3. **Discuss** ideas in our [Discussions](https://github.com/v-ishnu/Form2Mail/discussions) tab
 
----
 
 ## 🚨 Troubleshooting Guide (for Users)
 
@@ -136,7 +134,6 @@ If you're not receiving form submission emails:
 - Try using a different email provider (Currently, We only support Gmail)
 - If you're using a custom domain (e.g. `you@yourdomain.com`), ensure your domain is able to receive external emails
 
----
 
 ### ⚠️ Form Not Submitting?
 
@@ -150,7 +147,6 @@ If the form is not submitting properly or shows an error:
   - Check that the link is not broken or expired
 - Make sure JavaScript is **enabled** in your browser
 
----
 
 ### 🧪 Still Having Issues?
 

@@ -63,14 +63,15 @@ git push origin your-branch-name
 
 ### 📧 Emails Not Arriving?
 
-- ✅ Ensure all SMTP settings are correctly configured in your `.env` file:
+- Ensure all SMTP settings are correctly configured in your `.env` file:
+  - Download `.env` Sample File.
   - `SMTP_USER`, `SMTP_PASSWORD`, `SMTP_HOST`, `SMTP_PORT`
-- ✅ Use valid `from` and `to` addresses in your `transporter.sendMail()` call.
-- ✅ Check the **Spam or Junk folder** of the recipient.
-- ✅ If you're using **Gmail SMTP**:
+- Use valid `from` and `to` addresses in your `transporter.sendMail()` call.
+- Check the **Spam or Junk folder** of the recipient.
+- If you're using **Gmail SMTP**:
   - Make sure [2-Step Verification](https://myaccount.google.com/security) is enabled.
   - Generate and use an [App Password](https://support.google.com/accounts/answer/185833?hl=en) instead of your main Gmail password.
-- ✅ Ensure your SMTP provider allows third-party or less secure app access.
+- Ensure your SMTP provider allows third-party or less secure app access.
 
 ---
 
