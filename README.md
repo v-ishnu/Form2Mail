@@ -169,8 +169,8 @@ See [`LICENSE`](LICENSE) for more information.
 
 ## 📬 Contact
 
-**Project Maintainer** – [@YourUsername](https://github.com/YourUsername)
-**Email** – [your.email@example.com](mailto:your.email@example.com)
-**Project Link** – [https://github.com/YourUsername/Form2Mail](https://github.com/YourUsername/Form2Mail)
+**Project Maintainer** – [@v-ishnu](https://github.com/v-ishnu)
+**Email** – [Vishnu Prakash](mailto:vishnuprakash572@gmail.com)
+**Project Link** – [https://github.com/v-ishnu/Form2Mail](Form2Mail)
 
 ```
