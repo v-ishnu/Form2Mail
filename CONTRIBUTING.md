@@ -10,7 +10,7 @@ Thank you for your interest in contributing to [Form2Mail](https://github.com/v-
 ## 🛠 Development Setup
 
 1. **Fork the repository**
-   - Click "Fork" at [Form2Mail](https://github.com/v-ishnu/Form2Mail/fork)
+   - Click here to *Fork* the repo [Form2Mail](https://github.com/v-ishnu/Form2Mail/fork)
 
 2. **Clone your fork**
    ```bash
@@ -57,6 +57,75 @@ type(scope): description [ISSUE]
 ```bash
 git push origin your-branch-name
 ```
+
+
+## 🚨 Troubleshooting
+
+### 📧 Emails Not Arriving?
+
+- ✅ Ensure all SMTP settings are correctly configured in your `.env` file:
+  - `SMTP_USER`, `SMTP_PASSWORD`, `SMTP_HOST`, `SMTP_PORT`
+- ✅ Use valid `from` and `to` addresses in your `transporter.sendMail()` call.
+- ✅ Check the **Spam or Junk folder** of the recipient.
+- ✅ If you're using **Gmail SMTP**:
+  - Make sure [2-Step Verification](https://myaccount.google.com/security) is enabled.
+  - Generate and use an [App Password](https://support.google.com/accounts/answer/185833?hl=en) instead of your main Gmail password.
+- ✅ Ensure your SMTP provider allows third-party or less secure app access.
+
+---
+
+### ⚠️ Form Submission or Verification Errors?
+
+- ✅ Confirm Express is parsing incoming JSON:
+
+  ```js
+  app.use(express.json());
+  ```
+
+* ✅ Ensure you're passing the JWT token correctly in the verification URL:
+
+  ```
+  http://localhost:3598/verify.html?token=your_jwt_token_here
+  ```
+
+* ✅ reCAPTCHA issues? Double-check:
+
+  * `RECAPTCHA_SECRET_KEY` is correct in `.env`
+  * Your site/domain (e.g., `localhost`) is added in the [Google reCAPTCHA admin console](https://www.google.com/recaptcha/admin)
+
+* ✅ Ensure MongoDB is connected successfully:
+
+  * Your logs should say: `✅ Database Connected Successfully`
+  * If it hangs or times out, check your connection string or try using `127.0.0.1` for local MongoDB
+
+---
+
+### 🧪 Enable Debugging
+
+Use helpful logs during development to trace issues:
+
+```js
+console.log("📥 Email:", email);
+console.log("🔑 Token generated:", token);
+console.log("📨 Sending mail to:", smtpConfig.fromEmail);
+```
+
+For error handling middleware in Express:
+
+```js
+app.use((err, req, res, next) => {
+  console.error("❌ Error:", err.stack);
+  res.status(500).json({ error: "Internal Server Error" });
+});
+```
+
+---
+
+> 💡 Still stuck? Open an issue or run with `NODE_ENV=development` to enable more verbose logs.
+
+---
+
+
 
 ## 📤 Submitting Changes
 
