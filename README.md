@@ -62,7 +62,7 @@ Get form submissions straight to your inbox in 2 minutes!
 ### 2. Form2Mail with Google Sheets Integration
 
 #### Prepare Your Google Sheet
-1. Create a new Google Sheet ([template](https://sheets.new))
+1. Create a new Google Sheet
 2. Share with our service account:
    - Click **Share** → Enter:
      `form2mail@dinestx.iam.gserviceaccount.com`
@@ -83,7 +83,7 @@ Look at your sheet's URL:
 ```
 https://docs.google.com/spreadsheets/d/1BiF_PwhXHuNgWENADfQQHTFfDpjGb-zri8MdXv3onnQ/edit
 ```
-**YOUR_SHEET_ID:** `1BiF_PwhXHuNgWENADfQQHTFfDpjGb-zri8MdXv3onnQ`
+**Your_Google_Sheet_Id** `1BiF_PwhXHuNgWENADfQQHTFfDpjGb-zri8MdXv3onnQ`
 
 ---
 
