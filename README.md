@@ -122,19 +122,42 @@ We welcome community input! Here's how to contribute:
 
 ## 🚨 Troubleshooting
 
-**Emails not arriving?**
+## 🚨 Troubleshooting Guide (for Users)
 
-* ✅ Check your server has PHP `mail()` enabled
-* ✅ Verify emails aren't landing in spam
-* ✅ Test with a different recipient email provider
+### 📧 Not Receiving Emails?
 
-**Form errors?**
+If you're not receiving form submission emails:
 
-Enable debug mode in `form2mail.php`:
+- ✅ Make sure you entered a **valid email address**
+- ✅ Check your **Spam** or **Junk folder**
+- ✅ Try using a different email provider (Currently, We only support Gmail)
+- ✅ If you're using a custom domain (e.g. `you@yourdomain.com`), ensure your domain is able to receive external emails
 
-```php
-$debug_mode = true;  // Shows detailed error messages
-```
+---
+
+### ⚠️ Form Not Submitting?
+
+If the form is not submitting properly or shows an error:
+
+- ✅ Ensure your internet connection is working
+- ✅ Refresh the page and try again
+- ✅ Complete the **reCAPTCHA** challenge (the “I’m not a robot” box)
+- ✅ If a link was emailed to you for verification:
+  - Make sure you click the link within **15 minutes**
+  - Check that the link is not broken or expired
+- ✅ Make sure JavaScript is **enabled** in your browser
+
+---
+
+### 🧪 Still Having Issues?
+
+- Try using a different browser (e.g. Chrome or Firefox)
+- Try submitting the form from a different device
+- If nothing works, reach out to the site owner for help
+
+---
+
+> 💬 If this service was embedded on another website (like a contact form), please contact the website owner directly — Form2Email does not store your messages.
 
 ---
 
