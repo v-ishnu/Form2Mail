@@ -64,7 +64,7 @@ git push origin your-branch-name
 ### 📧 Emails Not Arriving?
 
 - Ensure all SMTP settings are correctly configured in your `.env` file:
-  - Download `[.env](https://raw.githubusercontent.com/v-ishnu/Form2Mail/refs/heads/v0.1/.env.sample)` Sample File.
+  - Download [`.env`](https://raw.githubusercontent.com/v-ishnu/Form2Mail/refs/heads/v0.1/.env.sample) Sample File.
   - `SMTP_USER`, `SMTP_PASSWORD`, `SMTP_HOST`, `SMTP_PORT`
 - Use valid `from` and `to` addresses in your `transporter.sendMail()` call.
 - Check the **Spam or Junk folder** of the recipient.
@@ -156,5 +156,3 @@ app.use((err, req, res, next) => {
 - Be responsive to review comments
 
 We appreciate your contribution! ❤️
-
-```
