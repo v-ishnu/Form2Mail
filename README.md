@@ -23,7 +23,7 @@ Effortlessly capture form submissions with instant email delivery and automated 
 
 ## Basic Setup
 
-### Email-Only Setup (Simple Version)
+### 1. Email-Only Setup (Simple Version)
 
 **Perfect when you just need form submissions sent to your inbox**
 Get form submissions straight to your inbox in 2 minutes!
@@ -58,7 +58,7 @@ Get form submissions straight to your inbox in 2 minutes!
 3. **That's it!** Form submissions will now come directly to your inbox.
 
 
-### Form2Mail with Google Sheets Integration
+### 2. Form2Mail with Google Sheets Integration
 
 #### Prepare Your Google Sheet
 1. Create a new Google Sheet ([template](https://sheets.new))
