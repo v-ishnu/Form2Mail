@@ -31,7 +31,7 @@ Get form submissions straight to your inbox in 2 minutes!
 
 1. Copy this ready-to-use form code:
    ```html
-   <form action="https://www.form2email.dinestx.com/api/v.01/your@email.com" method="POST" style="max-width:500px;margin:0 auto;">
+   <form action="https://www.form2mail.dinestx.com/api/v.01/your@email.com" method="POST" style="max-width:500px;margin:0 auto;">
 
       <label>Your Name*</label>
       <input type="text" name="name" placeholder="John Smith" required style="width:100%;padding:8px;margin-bottom:15px;">
@@ -52,9 +52,9 @@ Get form submissions straight to your inbox in 2 minutes!
 
    Replace your@email.com with your actual email address
 
-   ```js
+   `
       https://www.form2email.dinestx.com/api/v.01/your@email.com
-   ```
+   `
 3. **That's it!** Form submissions will now come directly to your inbox.
 
 
@@ -73,7 +73,7 @@ Look at your sheet's URL:
 https://docs.google.com/spreadsheets/d/THIS_IS_YOUR_SHEET_ID/edit
 
 ```html
-   <form action="https://www.form2email.dinestx.com/api/v.01/your@email.com?submit=Your_Google_Sheet_Id" method="POST">
+   <form action="https://www.form2mail.dinestx.com/api/v.01/your@email.com?submit=Your_Google_Sheet_Id" method="POST">
       // Your Form Code
     </form>
    ```
