@@ -120,8 +120,6 @@ We welcome community input! Here's how to contribute:
 
 ---
 
-## 🚨 Troubleshooting
-
 ## 🚨 Troubleshooting Guide (for Users)
 
 ### 📧 Not Receiving Emails?
