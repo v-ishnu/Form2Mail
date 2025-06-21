@@ -11,13 +11,13 @@ Effortlessly capture form submissions with instant email delivery and automated 
 
 ## ✨ Key Features
 
-- 🚀 **Zero backend setup** - works with static sites
-- 🛡️ **Spam protection** – reCAPTCHA
-- ✉️ **Instant email notifications** on form submission
-- 📊 **Auto-save to Google Sheets** in real-time
-- 🔒 **Secure processing** via Google Service Account
-- 🔔 **Success/error notifications** – User feedback after submission
-- 💬 **Community-driven** – Feature voting and discussion
+- **Zero backend setup** - works with static sites
+- **Spam protection** – reCAPTCHA
+- **Instant email notifications** on form submission
+- **Auto-save to Google Sheets** in real-time
+- **Secure processing** via Google Service Account
+- **Success/error notifications** – User feedback after submission
+- **Community-driven** – Feature voting and discussion
 
 ---
 
