@@ -10,7 +10,7 @@ Thank you for your interest in contributing to [Form2Mail](https://github.com/v-
 ## 🛠 Development Setup
 
 1. **Fork the repository**
-   - Click "Fork" at [github.com/v-ishnu/Form2Mail](https://github.com/v-ishnu/Form2Mail)
+   - Click "Fork" at [Form2Mail](https://github.com/v-ishnu/Form2Mail/fork)
 
 2. **Clone your fork**
    ```bash
