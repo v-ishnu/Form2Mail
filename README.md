@@ -177,5 +177,5 @@ This project is distributed under the GNU General Public License v3.0. See [`LIC
 
 ## 📬 Contact
 
- **Project Maintainer** – [@v-ishnu](https://github.com/v-ishnu)[Email](mailto:vishnuprakash572@gmail.com)<br>
- **Project Link** – [https://github.com/v-ishnu/Form2Mail](Form2Mail)<br>
+ **Vishnu Prakash** – [@v-ishnu](https://github.com/v-ishnu) – vishnuprakash572@gmail.com<br>
+ **Project Link** – [https://github.com/v-ishnu/Form2Mail](https://github.com/v-ishnu/Form2Mail)<br>
