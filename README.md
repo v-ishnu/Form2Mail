@@ -52,9 +52,10 @@ Get form submissions straight to your inbox in 2 minutes!
 
    Replace your@email.com with your actual email address
 
-   `
+   ```js
       https://www.form2email.dinestx.com/api/v.01/your@email.com
-   `
+   ```
+
 3. **That's it!** Form submissions will now come directly to your inbox.
 
 
@@ -70,7 +71,7 @@ Get form submissions straight to your inbox in 2 minutes!
 3. Add This Form to Your Website
 Where to find YOUR_SHEET_ID:
 Look at your sheet's URL:
-https://docs.google.com/spreadsheets/d/THIS_IS_YOUR_SHEET_ID/edit
+https://docs.google.com/spreadsheets/d/<span style="color:yellow">1BiF_PwhXHuNgWENADfQQHTFfDpjGb-zri8MdXv3onnQ</span>/edit
 
 ```html
    <form action="https://www.form2mail.dinestx.com/api/v.01/your@email.com?submit=Your_Google_Sheet_Id" method="POST">
