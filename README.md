@@ -72,15 +72,12 @@ Get form submissions straight to your inbox in 2 minutes!
 Where to find YOUR_SHEET_ID:
 Look at your sheet's URL:
 
+`Example`
 ```
 https://docs.google.com/spreadsheets/d/1BiF_PwhXHuNgWENADfQQHTFfDpjGb-zri8MdXv3onnQ/edit
 ```
 **YOUR_SHEET_ID:** `1BiF_PwhXHuNgWENADfQQHTFfDpjGb-zri8MdXv3onnQ`
 
-
-```diff
-https://docs.google.com/spreadsheets/d/+1BiF_PwhXHuNgWENADfQQHTFfDpjGb-zri8MdXv3onnQ+/edit
-```
 
 ```html
    <form action="https://www.form2mail.dinestx.com/api/v.01/your@email.com?submit=Your_Google_Sheet_Id" method="POST">
