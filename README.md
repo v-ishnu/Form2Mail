@@ -169,6 +169,6 @@ See [`LICENSE`](LICENSE) for more information.
 
 ## 📬 Contact
 
- **Project Maintainer** – [@v-ishnu](https://github.com/v-ishnu)
- **Email** – [Vishnu Prakash](mailto:vishnuprakash572@gmail.com)
- **Project Link** – [https://github.com/v-ishnu/Form2Mail](Form2Mail)
+ **Project Maintainer** – [@v-ishnu](https://github.com/v-ishnu)<br>
+ **Email** – [Vishnu Prakash](mailto:vishnuprakash572@gmail.com)<br>
+ **Project Link** – [https://github.com/v-ishnu/Form2Mail](Form2Mail)<br>
