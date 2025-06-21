@@ -87,14 +87,14 @@ https://docs.google.com/spreadsheets/d/1BiF_PwhXHuNgWENADfQQHTFfDpjGb-zri8MdXv3o
 
 ---
 
-## ⚙️ Configuration Options
+## ⚙️ Form Configuration Options
 
-| Parameter          | Description                       | Default       |
-| ------------------ | --------------------------------- | ------------- |
-| `$recipient`       | Destination email                 | `""`          |
-| `$subject_prefix`  | Email subject prefix              | `"Form: "`    |
-| `$enable_honeypot` | Anti-spam honeypot field          | `true`        |
-| `$redirect_url`    | Page to redirect after submission | `"" (reload)` |
+
+| Parameter          | Description                                        | Default         |
+| ------------------ | -------------------------------------------------- | -------------   |
+| `name= "Name"`     | Capital `Name` can be Shown in Your email Table    | `name="name"`   |
+| `name= "Email"`    | Capital `Name` can be Shown in Your email Table    | `name="email"`  |
+| `name= "Mobile"`   | Capital `Name` can be Shown in Your email Table    | `name="mobile"` |
 
 ---
 
@@ -104,9 +104,9 @@ We welcome community input! Here's how to contribute:
 
 ### Current Feature Requests
 
-| Feature Request         | 👍 Votes | Status      | Discussion |
+| Feature Request         | 👍 Votes | Status       | Discussion |
 | ----------------------- | -------- | ----------- | ---------- |
-| File attachments        | 42       | Planned     | [#12](#)   |
+| File attachments        | 42       | Planned     | [#4](#)    |
 | Slack/Teams integration | 28       | In Progress | [#18](#)   |
 | Multi-language support  | 15       | Considering | [#23](#)   |
 
