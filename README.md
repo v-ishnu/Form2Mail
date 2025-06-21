@@ -35,7 +35,7 @@ Just replace `your@email.com` with your actual email address in the form `action
 3. Add to your HTML form:
 
    ```html
-   <form action="https://form2mail.dinestx.com/api/v.01/your@email.com" method="POST">
+   <form action="https://www.form2email.dinestx.com/api/v.01/your@email.com" method="POST">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
       <textarea name="message" placeholder="Your Message" required></textarea>
