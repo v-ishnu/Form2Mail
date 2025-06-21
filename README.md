@@ -140,12 +140,33 @@ $debug_mode = true;  // Shows detailed error messages
 
 ## 🤝 Contributing
 
-1. Fork the repository
-2. Create a feature branch
+Thank you for your interest in contributing to [Form2Mail](https://github.com/v-ishnu/Form2Mail)! Here's how you can contribute:
+
+1. **Fork the repository**
+
+2. **Clone your fork locally**
 
    ```bash
-   git checkout -b feature/AmazingFeature
+   git clone https://github.com/YOUR_USERNAME/Form2Mail.git
+   cd Form2Mail
    ```
+3. **Set up upstream remote**
+
+   ```bash
+   git remote add upstream https://github.com/v-ishnu/Form2Mail.git
+   ```
+
+
+### 🤝 Making Changes
+
+1. **Create a feature branch**
+
+   ```bash
+   git checkout -b feat/your-feature-name
+   # or
+   git checkout -b fix/issue-description
+   ```
+
 3. Commit your changes
 
    ```bash
