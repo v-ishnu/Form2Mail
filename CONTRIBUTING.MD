@@ -1,6 +1,6 @@
 # 🚀 Contributing to Form2Mail
 
-We welcome contributions from everyone! Here's how to get started:
+Thank you for your interest in contributing to [Form2Mail](https://github.com/v-ishnu/Form2Mail)! I welcome contributions from everyone! Here's how to get started:
 
 ## 📋 Prerequisites
 - GitHub account
@@ -40,18 +40,20 @@ git checkout -b type/description
 - Keep commits atomic
 
 ### Commit properly
+
 ```bash
 git add .
 git commit -m "feat: add email validation [ISSUE-123]"
 ```
+
 **Commit message format:**
+
 ```
 type(scope): description [ISSUE]
-
-More details if needed...
 ```
 
 ### Push changes
+
 ```bash
 git push origin your-branch-name
 ```
@@ -67,7 +69,7 @@ git push origin your-branch-name
 4. Wait for review and address feedback
 
 ## 🏷 Pull Request Labels
-| Label       | Purpose                     |
+| Label       | Purpose                    |
 |-------------|----------------------------|
 | bug         | Fixes a bug                |
 | enhancement | New feature                |
