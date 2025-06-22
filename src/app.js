@@ -1,5 +1,4 @@
 ;import express from "express"
-;import axios from "axios"
 ;import compression from 'compression';
 ;import path from 'path'
 ;import { fileURLToPath } from 'url'
@@ -29,22 +28,16 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 
-// Serve static files from public directory
-app.use(express.static(path.join(__dirname, 'public')));
 
-// Route handler for root path
+// ✅ Serve static files from the correct public folder
+app.use(express.static(path.join(__dirname, '..', 'public')));
+
+// ✅ Serve landing.html for root route
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'landing.html'));
+  res.sendFile(path.join(__dirname, '..', 'public', 'landing.html'));
 });
 
 
-// app.get("/", (req, res) => {
-//     res.render('landing-page', {
-//         title: "My Custom Page",
-//         status: "Running",
-//         features: ["Fast", "Secure", "Reliable"]
-//     });
-// });
 
 ;app.use('/api/v.01',formRoutes)
 
