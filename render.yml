@@ -1,0 +1,15 @@
+# render.yaml
+services:
+  - type: web
+    name: form2mail
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: node index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+    headers:
+      - path: /
+        cacheControl: public, max-age=86400
+      - path: /public/*
+        cacheControl: public, max-age=31536000, immutable
