@@ -11,7 +11,7 @@
         { expiresIn: "15m" }
       );
 
-      const verifyUrl= `http://localhost:3598/api/v.01/verify?token=${token}`
+      const verifyUrl= `https://www.form2mail.dinestx.com/api/v.01/verify?token=${token}`
       // const verifyUrl = `http://localhost:3598/verify-email.html?token=${token}`
 
       const info = await transporter.sendMail({
