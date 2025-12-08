@@ -1,0 +1,28 @@
+name: Daily Trigger - Render Endpoint
+
+on:
+  # change cron expression below for schedule (UTC)
+  schedule:
+    - cron: "0 0 * * *"   # once per day at 00:00 UTC (adjust below if you want a different time)
+  workflow_dispatch: {}
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call Render job endpoint
+        env:
+          HEALTH_URL: ${{ secrets.HEALTH_URL }}
+          HEALTH_TOKEN: ${{ secrets.HEALTH_TOKEN }}
+        run: |
+          echo "Pinging $HEALTH_URL"
+          status=$(curl -s -o /dev/null -w "%{http_code}" \
+            -H "x-health-token: $HEALTH_TOKEN" \
+            "$HEALTH_URL")
+
+          echo "Status code: $status"
+
+          if [ "$status" -ne 200 ]; then
+            echo "Health endpoint returned error."
+            exit 1
+          fi
