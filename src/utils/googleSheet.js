@@ -14,8 +14,9 @@ const authorize = () => {
 };
 
 export const appendToSheet = async (spreadsheetId, dataRow) => {
-  const auth = await authorize();
+  const auth = authorize();
   const sheets = google.sheets({ version: 'v4', auth });
+  console.log(dataRow)
 
   const response = await sheets.spreadsheets.values.append({
     spreadsheetId,

@@ -11,8 +11,16 @@
         { expiresIn: "15m" }
       );
 
-      const verifyUrl= `https://www.form2mail.dinestx.com/api/v.01/verify?token=${token}`
-      // const verifyUrl = `http://localhost:3598/verify-email.html?token=${token}`
+
+      // Production
+      const pro_verifyUrl= `https://www.form2mail.dinestx.com/api/v.01/verify?token=${token}`
+
+      // Developement
+      const dev_verifyUrl = `http://localhost:3598/verify?token=${token}`
+
+      const verifyUrl = process.env.NODE_ENV === "productio" ? pro_verifyUrl : dev_verifyUrl;
+
+      console.log(verifyUrl);
 
       const info = await transporter.sendMail({
         from: `"Form2Mail by Dinestx" <${smtpConfig.fromEmail}>`,
