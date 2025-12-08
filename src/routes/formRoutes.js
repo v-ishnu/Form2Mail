@@ -7,4 +7,6 @@ const router = express.Router()
 ;router.post("/:email", formSubmission)
 ;router.get("/verify",verifyAccount);
 
+;router.get("/health-check", healthCheckup)
+
 ;export default router;

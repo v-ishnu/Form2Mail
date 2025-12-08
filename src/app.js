@@ -37,8 +37,6 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'public', 'landing.html'));
 });
 
-app.get('/health')
-
 
 
 ;app.use('/api/v.01',formRoutes)
